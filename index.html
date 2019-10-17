@@ -1,164 +1,23 @@
-
-
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>카카오콘</title>
-    <!-- 2019-08-21 슬라이드 교체로 인한 수정 시작 -->
-    <link rel="stylesheet" type="text/css" href='https://t1.kakaocdn.net/blockadmin/web/intro/css/jquery.bxslider.css'>
-    <script src='https://t1.kakaocdn.net/blockadmin/web/js/jquery.min.js'></script>
-    <script src='https://t1.kakaocdn.net/blockadmin/web/js/jquery.bxslider.min.js'></script>
-    <script>
-        function kakaolink() {
-             window.location="kakaolink://send";
-        }
-    </script>
-    <!-- 2019-07-24 수정 시작 -->
-    <style>
-        /* reset */
-        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
-        fieldset,img{border:0 none}
-        dl,ul,ol,menu,li{list-style:none}
-        button{border:0 none;background-color:transparent;cursor:pointer}
-        body{-webkit-text-size-adjust:100%}/* 뷰포트 변환시 폰트크기 자동확대 방지. */
-        body{background:#fff}
-        body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',sans-serif;color:#000}/* color값은 디자인가이드에 맞게사용 */
-        a{color:#333;text-decoration:none}
-        a:active, a:hover{text-decoration:none}
-        html,body{height:100%}
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        /* global */
-        .ir_pm{display:block;overflow:hidden;font-size:1px;line-height:0;color:transparent}/* Mobile용 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
-        .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
-        .show{display:block}
-        .hide{display:none}
-
-        /* 카카오콘 브릿지 */
-        /* 2019-08-19 수정 시작 */
-        .thumb_g{display:block;width:100%}
-        .prm_kcon{position:relative;height:100%}
-        .kcon_intro{position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%}
-        .kcon_intro .kcon_slide{overflow:hidden;height:100%}
-        .kcon_intro .bx-wrapper{height:100%;border:0 none;box-shadow:none}
-        .kcon_intro .bx-viewport{height:100% !important}
-        .kcon_intro .slide_pannel{height:100%}
-        .kcon_intro .wrap_thumb{width:320px;margin:0 auto}
-        .kcon_intro .detail_thumb{text-align:center}
-        .kcon_intro .tit_thumb{display:block;padding-top:26px;font-weight:normal;font-size:24px;line-height:30px;color:#000;letter-spacing:-.5px}
-        .kcon_intro .desc_thumb{padding-top:12px;font-size:13px;line-height:19px;color:#999;letter-spacing:-.5px}
-        .kcon_intro .bx-controls{overflow:hidden;position:absolute;top:404px;left:0;right:0;z-index:5;width:88px;margin:19px auto 0}
-        .kcon_intro .bx-controls .bx-pager{position:static;padding-top:0}
-        .kcon_intro .bx-controls .bx-pager-item{margin:6px;vertical-align:top}
-        .kcon_intro .bx-wrapper .bx-pager .bx-pager-link{display:block;margin:0;border:1px solid #D1D1D1;border-radius:100%;font-size:1px;background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box;pointer-events:none}
-        .kcon_intro .bx-wrapper .bx-pager .bx-pager-link:hover,
-        .kcon_intro .bx-wrapper .bx-pager .bx-pager-link.active,
-        .kcon_intro .bx-wrapper .bx-pager .bx-pager-link:focus{border-color:#999;background:#999}
-        /* //2019-08-19 수정 끝 */
-        .kcon_intro .bx-wrapper .bx-loading{background:none}/* 2019-08-22 추가 */
-    </style>
-    <!-- //2019-07-24 수정 끝 -->
-    <!-- //2019-08-21 슬라이드 교체로 인한 수정 끝 -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-
-
 <body>
-<div id="kakaoPromotion" class="prm_kcon">
-    <div id="kakaoHead">
-        <h1 class="screen_out">카카오콘</h1>
-    </div>
-    <hr class="hide">
-    <div id="kakaoContent">
-        <h2 class="screen_out">카카오콘 본문</h2>
-        <div class="kcon_intro">
-            <div class="kcon_slide">
-                <div class="slide_pannel">
-                    <div class="wrap_thumb">
-                        <img src="https://t1.kakaocdn.net/blockadmin/web/intro/images/rtn/img_slide1.png" class="thumb_g" alt>
-                    </div>
-                    <div class="detail_thumb" onClick="kakaolink()">
-                        <strong class="tit_thumb">카카오콘을 소개해요3</strong>
-                        <strong>
-                            <p class="desc_thumb">
-                            click here!!
-                        </p>
-                        </strong>
-                        <p class="desc_thumb">
-                            카카오를 잘 쓰는 당신에게<br>
-                            특별한 혜택을 선물하기 위해 태어난<br>
-                            카카오만의 스페셜 리워드예요.
-                        </p>
-                    </div>
-                </div>
-                <div class="slide_pannel">
-                    <div class="wrap_thumb">
-                        <img src="https://t1.kakaocdn.net/blockadmin/web/intro/images/rtn/img_slide2.png" class="thumb_g" alt>
-                    </div>
-                    <div class="detail_thumb">
-                        <strong class="tit_thumb">누구나 쉽게 모아요</strong>
-                        <p class="desc_thumb">
-                            카카오의 서비스들을 늘 하던 대로<br>
-                            잘 사용하고 인증하면<br>
-                            카카오콘이 알아서 차곡차곡, 카카오 답죠?
-                        </p>
-                    </div>
-                </div>
-                <div class="slide_pannel">
-                    <div class="wrap_thumb">
-                        <img src="https://t1.kakaocdn.net/blockadmin/web/intro/images/rtn/img_slide3.png" class="thumb_g" alt>
-                    </div>
-                    <div class="detail_thumb">
-                        <strong class="tit_thumb">특별한 아이템을 경험해요</strong>
-                        <p class="desc_thumb">
-                            나만을 위한 특별 이용권,<br>
-                            행사 초대권, 특별한 자격증까지!<br>
-                            돈으로도 살 수 없는 카카오만의 특별한 아이템<br>
-                            카카오콘으로 바꿀까봐요.
-                        </p>
-                    </div>
-                </div>
-                <div class="slide_pannel">
-                    <div class="wrap_thumb">
-                        <img src="https://t1.kakaocdn.net/blockadmin/web/intro/images/rtn/img_slide4.png" class="thumb_g" alt>
-                    </div>
-                    <div class="detail_thumb">
-                        <strong class="tit_thumb">카카오다운 놀라운 리워드</strong>
-                        <p class="desc_thumb">
-                            쉽게 모아, 놀라운 경험으로 바꿔써요.<br>
-                            카카오콘으로 더 흥미진진해질<br>
-                            당신의 카카오생활, 지금 시작해요!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- 2019-07-24 수정 시작 -->
-<!-- 2019-08-21 슬라이드 교체로 인한 수정 시작 -->
-<script>
-    
-    
-    $(document).ready(function(){
-        $(".bx-pager-item a.active").prepend($('<em class="screen_out" />').text("현재 페이지"));
-        var slider = $('.kcon_slide').bxSlider({
-            infiniteLoop:false,
-            controls:false,
-            speed:300,
-            swipeThreshold:1,
-            onSlideAfter: function($slideElement, oldIndex, newIndex){
-                $('.bx-pager-item').siblings().children().find(".screen_out").remove(); // 비활성화시 현재페이지 표시 삭제
-                if($(".bx-pager-item a").hasClass("active") == true){
-                    $(".bx-pager-item .active").prepend($('<em class="screen_out" />').text("현재 페이지")); // 활성화시 현재페이지 표시
-                };
-            }
-        });
-    });
-</script>
-<!-- //2019-07-24 수정 끝 -->
-<!-- //2019-08-21 슬라이드 교체로 인한 수정 끝 -->
+
+  <p>Hello, world!</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
