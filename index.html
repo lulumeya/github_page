@@ -11,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href='https://t1.kakaocdn.net/blockadmin/web/intro/css/jquery.bxslider.css'>
     <script src='https://t1.kakaocdn.net/blockadmin/web/js/jquery.min.js'></script>
     <script src='https://t1.kakaocdn.net/blockadmin/web/js/jquery.bxslider.min.js'></script>
+    <script>
+        fun kakaolink() {
+             window.location="kakaolink://send";
+        }
+    </script>
     <!-- 2019-07-24 수정 시작 -->
     <style>
         /* reset */
@@ -77,7 +82,9 @@
                     <div class="detail_thumb">
                         <strong class="tit_thumb">카카오콘을 소개해요3</strong>
                         <strong>
-  <a href="kakaolink://send"> Take a QR code </a>
+                            <p class="desc_thumb" onClick="kakaolink()">
+                            click here!
+                        </p>
                         </strong>
                         <p class="desc_thumb">
                             카카오를 잘 쓰는 당신에게<br>
@@ -133,6 +140,8 @@
 <!-- 2019-07-24 수정 시작 -->
 <!-- 2019-08-21 슬라이드 교체로 인한 수정 시작 -->
 <script>
+    
+    
     $(document).ready(function(){
         $(".bx-pager-item a.active").prepend($('<em class="screen_out" />').text("현재 페이지"));
         var slider = $('.kcon_slide').bxSlider({
